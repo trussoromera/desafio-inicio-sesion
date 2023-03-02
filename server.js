@@ -12,11 +12,11 @@ import initializeStrategies from './src/config/passport-config.js';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
-const connection = mongoose.connect('mongodb+srv://martinabeauvais:Necesitas11@coderclustercomision381.asqu6kh.mongodb.net/viciouscoffee?retryWrites=true&w=majority')
+const connection = mongoose.connect('mongodb+srv://tomasrusso:Necesitas11@coderclustercomision381.asqu6kh.mongodb.net/viciouscoffee?retryWrites=true&w=majority')
 
 app.use(session({
     store: MongoStore.create({
-        mongoUrl: "mongodb+srv://martinabeauvais:Necesitas11@coderclustercomision381.asqu6kh.mongodb.net/viciouscoffee?retryWrites=true&w=majority",
+        mongoUrl: "mongodb+srv://tomasrusso:Necesitas11@coderclustercomision381.asqu6kh.mongodb.net/viciouscoffee?retryWrites=true&w=majority",
         mongoOptions : {useNewUrlParser : true, useUnifiedTopology: true},}),
     secret: 'viciouscoffee',
     resave: false,
